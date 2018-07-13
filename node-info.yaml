@@ -1,0 +1,14 @@
+parameter_defaults:
+  OvercloudControllerFlavor: control
+  OvercloudComputeFlavor: compute
+  OvercloudCephStorageFlavor: ceph-storage
+  ControllerCount: 3
+  ComputeCount: 2
+  CephStorageCount: 2
+  NeutronNetworkType: vlan
+  NeutronTunnelTypes: ''
+  CephAnsibleDisksConfig:
+    osd_scenario: collocated
+    devices:
+     - /dev/sdb
+     - /dev/sdc
